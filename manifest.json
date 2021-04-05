@@ -1,0 +1,22 @@
+{
+    "name": "Video Keyboard Controller",
+    "action": {},
+    "manifest_version": 3,
+    "version": "0.1",
+    "description": "Enable keyboard control for HTML5 video player",
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_idle",
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "storage"
+    ]
+}
